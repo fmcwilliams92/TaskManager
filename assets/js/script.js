@@ -1,10 +1,10 @@
 var buttonE1 = document.querySelector("#save-task");
-var tasksToDoE1 = document.querySelector("#tasks-to-do");
+var tasksToDoE1 = document.querySelector("#tasks-to-do").value;
 
 var createTaskHandler = function() {
   var listItemE1 = document.createElement("li");
   listItemE1.className = "task-item";
-  listItemE1.textContent = "This is a new task";
+  listItemE1.textContent = tasksToDoE1;
   tasksToDoE1.appendChild(listItemE1);
 }
 
